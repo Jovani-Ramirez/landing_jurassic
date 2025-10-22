@@ -1,0 +1,126 @@
+body {
+    font-family: "Ubuntu", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.hero {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+        url("../assets/img/experiencia.avif") center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+/* PAQUETES */
+.paquetes {
+    background: linear-gradient(135deg, #004d26, #001a0e);
+    color: white;
+}
+
+/* === Cards de Paquetes === */
+.paquetes .card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.paquetes .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.paquetes .card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 3px solid #198754;
+}
+
+/* Cuerpo de las tarjetas */
+.paquetes .card-body {
+    background-color: #fff;
+    color: #222;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.paquetes .card-title {
+    color: #0f5132;
+    font-weight: bold;
+}
+
+.paquetes .btn-outline-success {
+    border-color: #198754;
+    color: #198754;
+}
+
+.paquetes .btn-outline-success:hover {
+    background-color: #198754;
+    color: white;
+}
+
+/* FOOTER */
+.footer i:hover {
+    color: #28a745;
+    transition: color 0.3s ease;
+}
+
+/* ATRACCIONES */
+.atracciones {
+    background: linear-gradient(135deg, #002b16, #000);
+}
+
+.atracciones .card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.atracciones .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.atracciones .card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 3px solid #198754;
+}
+
+.atracciones .card-title {
+    color: #28a745;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .paquetes .card img {
+        height: 180px;
+    }
+}
