@@ -3,7 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- META TAG DESCRIPTION -->
+    <meta
+      name="description"
+      content="Vive la aventura en Jurassic World. Descubre dinosaurios reales, hoteles temáticos y experiencias únicas en un entorno natural."
+    />
+
+    <!-- META TAG KEYWORDS -->
+    <meta
+      name="keywords"
+      content="Jurassic World, parque jurásico, dinosaurios, aventura, hoteles temáticos, turismo, viajes, experiencias únicas"
+    />
+
+    <!-- META TAG ROBOTS -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- OPEN GRAPH META TAGS -->
+    <meta property="og:title" content="Jurassic World - Vive la Aventura" />
+    <meta
+      property="og:description"
+      content="Explora el parque jurásico más increíble del planeta. Dinosaurios, naturaleza y emoción te esperan."
+    />
+    <meta property="og:image" content="./assets/img/logo.png" />
+    <meta property="og:url" content="https://jovani-ramirez.github.io/Ebac_git/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_MX" />
+
     <title>Jurassic World - Vive la Aventura</title>
+
     <link rel="stylesheet" href="./css/index.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -26,13 +54,14 @@
         <a class="navbar-brand d-flex align-items-center" href="#">
           <img
             src="./assets/img/logo.png"
-            alt="Jurassic World Logo"
+            alt="Logo de Jurassic World"
             width="90"
             height="90"
             class="me-2"
           />
           <span class="fw-bold text-uppercase text-light">Jurassic World</span>
         </a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -44,248 +73,258 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+
+        <!-- NAV  -->
+        <nav class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="#hero" class="nav-link">Inicio</a>
+              <a href="#hero" class="nav-link" rel="noopener">Inicio</a>
             </li>
             <li class="nav-item">
-              <a href="#paquetes" class="nav-link">Paquetes</a>
+              <a href="#paquetes" class="nav-link" rel="noopener">Paquetes</a>
             </li>
             <li class="nav-item">
-              <a href="#contacto" class="nav-link">Contacto</a>
+              <a href="#contacto" class="nav-link" rel="noopener">Contacto</a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
     </header>
 
-    <!-- HERO -->
-    <section
-      id="hero"
-      class="hero d-flex align-items-center text-center text-light"
-    >
-      <div class="container">
-        <h1 class="display-4 fw-bold mb-3">Vive la aventura jurásica</h1>
-        <p class="lead mb-4">
-          Explora el parque más increíble del planeta. Dinosaurios, naturaleza y
-          emoción te esperan.
-        </p>
-        <a
-          href="https://jovani-ramirez.github.io/Ebac_git/pages/travels.html"
-          class="btn btn-success btn-lg px-5 py-3"
-        >
-          Reserva tu experiencia
-        </a>
-      </div>
-    </section>
+    <main>
+      <!-- HERO -->
+      <section
+        id="hero"
+        class="hero d-flex align-items-center text-center text-light"
+      >
+        <div class="container">
+          <h1 class="display-4 fw-bold mb-3">Vive la aventura jurásica</h1>
+          <p class="lead mb-4">
+            Explora el parque más increíble del planeta. Dinosaurios, naturaleza y
+            emoción te esperan.
+          </p>
+          <a
+            href="https://jovani-ramirez.github.io/Ebac_git/pages/travels.html"
+            class="btn btn-success btn-lg px-5 py-3"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Reserva tu experiencia
+          </a>
+        </div>
+      </section>
 
-    <!-- BENEFICIOS -->
-    <section class="beneficios py-5 bg-light">
-      <div class="container text-center">
-        <h2 class="fw-bold mb-4">¿Por qué visitarnos?</h2>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <i class="fa-solid fa-dinosaur fa-3x text-success mb-3"></i>
-            <h5>Especies auténticas</h5>
-            <p>
-              Conoce de cerca dinosaurios recreados con tecnología genética
-              avanzada.
-            </p>
-          </div>
-          <div class="col-md-4">
-            <i class="fa-solid fa-mountain-sun fa-3x text-success mb-3"></i>
-            <h5>Entorno natural</h5>
-            <p>
-              Disfruta de paisajes exóticos y hábitats reales dentro del parque.
-            </p>
-          </div>
-          <div class="col-md-4">
-            <i class="fa-solid fa-hotel fa-3x text-success mb-3"></i>
-            <h5>Alojamientos exclusivos</h5>
-            <p>
-              Hospédate en nuestros hoteles temáticos y vive una experiencia
-              única.
-            </p>
+      <!-- BENEFICIOS -->
+      <section class="beneficios py-5 bg-light">
+        <div class="container text-center">
+          <h2 class="fw-bold mb-4">¿Por qué visitarnos?</h2>
+          <div class="row g-4">
+            <article class="col-md-4">
+              <i class="fa-solid fa-dinosaur fa-3x text-success mb-3"></i>
+              <h3>Especies auténticas</h3>
+              <p>
+                Conoce de cerca dinosaurios recreados con tecnología genética avanzada.
+              </p>
+            </article>
+
+            <article class="col-md-4">
+              <i class="fa-solid fa-mountain-sun fa-3x text-success mb-3"></i>
+              <h3>Entorno natural</h3>
+              <p>
+                Disfruta de paisajes exóticos y hábitats reales dentro del parque.
+              </p>
+            </article>
+
+            <article class="col-md-4">
+              <i class="fa-solid fa-hotel fa-3x text-success mb-3"></i>
+              <h3>Alojamientos exclusivos</h3>
+              <p>
+                Hospédate en nuestros hoteles temáticos y vive una experiencia única.
+              </p>
+            </article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- PAQUETES -->
-    <section id="paquetes" class="paquetes py-5">
-      <div class="container text-center">
-        <h2 class="fw-bold mb-4 text-light">Estancias y alojamientos</h2>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card shadow-lg">
-              <img
-                src="./assets/img/hotel-l.webp"
-                class="card-img-top"
-                alt="Hotel Jurásico"
-              />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">Hotel Jurásico</h5>
-                <p class="card-text">
-                  Estancia de lujo con vista directa al recinto de los
-                  Brachiosaurus.
-                </p>
-                <a
-                  href="https://jovani-ramirez.github.io/Ebac_git/pages/travels.html"
-                  class="btn btn-outline-success"
-                >
-                  Reservar
-                </a>
+      <!-- PAQUETES -->
+      <section id="paquetes" class="paquetes py-5 bg-dark">
+        <div class="container text-center">
+          <h2 class="fw-bold mb-4 text-light">Estancias y alojamientos</h2>
+          <div class="row g-4">
+            <article class="col-md-4">
+              <div class="card shadow-lg h-100">
+                <img
+                  src="./assets/img/hotel-l.webp"
+                  class="card-img-top"
+                  alt="Vista del Hotel Jurásico con Brachiosaurus"
+                />
+                <div class="card-body">
+                  <h3 class="card-title fw-bold">Hotel Jurásico</h3>
+                  <p class="card-text">
+                    Estancia de lujo con vista directa al recinto de los Brachiosaurus.
+                  </p>
+                  <a
+                    href="https://jovani-ramirez.github.io/Ebac_git/pages/travels.html"
+                    class="btn btn-outline-success"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Reservar
+                  </a>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card shadow-lg">
-              <img
-                src="./assets/img/cabanas.jpg"
-                class="card-img-top"
-                alt="Cabañas Prehistóricas"
-              />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">Cabañas Prehistóricas</h5>
-                <p class="card-text">
-                  Relájate en medio de la selva con todo el confort moderno.
-                </p>
-                <a
-                  href="https://jovani-ramirez.github.io/Ebac_git/pages/travels.html"
-                  class="btn btn-outline-success"
-                >
-                  Reservar
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card shadow-lg">
-              <img
-                src="./assets/img/camp.webp"
-                class="card-img-top"
-                alt="Glamping Dinosaurio"
-              />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">Glamping Dinosaurio</h5>
-                <p class="card-text">
-                  Aventura bajo las estrellas, con vista al T-Rex Valley.
-                </p>
-                <a
-                  href="https://jovani-ramirez.github.io/Ebac_git/pages/travels.html"
-                  class="btn btn-outline-success"
-                >
-                  Reservar
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            </article>
 
-    <!-- ATRACCIONES -->
-    <section id="atracciones" class="atracciones py-5">
-      <div class="container text-center text-light">
-        <h2 class="fw-bold mb-5">Atracciones Imperdibles</h2>
-        <div class="row g-4">
-          <!-- Safari Cretácico -->
-          <div class="col-md-4">
-            <div class="card bg-dark text-light border-success h-100 shadow-lg">
-              <img
-                src="./assets/img/giro.webp"
-                class="card-img-top"
-                alt="Safari Cretácico"
-              />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">
-                  <i class="fa-solid fa-jeep me-2 text-success"></i>Safari
-                  Cretácico
-                </h5>
-                <p class="card-text">
-                  Explora en vehículos todoterreno mientras observas herbívoros
-                  gigantes en su hábitat natural.
-                </p>
+            <article class="col-md-4">
+              <div class="card shadow-lg h-100">
+                <img
+                  src="./assets/img/cabanas.jpg"
+                  class="card-img-top"
+                  alt="Cabañas prehistóricas rodeadas de selva"
+                />
+                <div class="card-body">
+                  <h3 class="card-title fw-bold">Cabañas Prehistóricas</h3>
+                  <p class="card-text">
+                    Relájate en medio de la selva con todo el confort moderno.
+                  </p>
+                  <a
+                    href="https://jovani-ramirez.github.io/Ebac_git/pages/travels.html"
+                    class="btn btn-outline-success"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Reservar
+                  </a>
+                </div>
               </div>
-            </div>
-          </div>
+            </article>
 
-          <!-- Centro de Visitantes -->
-          <div class="col-md-4">
-            <div class="card bg-dark text-light border-success h-100 shadow-lg">
-              <img
-                src="./assets/img/lab.jpg"
-                class="card-img-top"
-                alt="Centro de Visitantes"
-              />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">
-                  <i class="fa-solid fa-building-columns me-2 text-success"></i
-                  >Centro de Visitantes
-                </h5>
-                <p class="card-text">
-                  Admira fósiles auténticos, hologramas educativos y conoce la
-                  historia detrás de la creación del parque en un recorrido
-                  guiado.
-                </p>
+            <article class="col-md-4">
+              <div class="card shadow-lg h-100">
+                <img
+                  src="./assets/img/camp.webp"
+                  class="card-img-top"
+                  alt="Glamping con vista al valle del T-Rex"
+                />
+                <div class="card-body">
+                  <h3 class="card-title fw-bold">Glamping Dinosaurio</h3>
+                  <p class="card-text">
+                    Aventura bajo las estrellas, con vista al T-Rex Valley.
+                  </p>
+                  <a
+                    href="https://jovani-ramirez.github.io/Ebac_git/pages/travels.html"
+                    class="btn btn-outline-success"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Reservar
+                  </a>
+                </div>
               </div>
-            </div>
-          </div>
-
-          <!-- Exhibición del T-Rex -->
-          <div class="col-md-4">
-            <div class="card bg-dark text-light border-success h-100 shadow-lg">
-              <img
-                src="./assets/img/trex.avif"
-                class="card-img-top"
-                alt="Exhibición del T-Rex"
-              />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">
-                  <i class="fa-solid fa-dragon me-2 text-success"></i>Exhibición
-                  del T-Rex
-                </h5>
-                <p class="card-text">
-                  Siente la adrenalina al presenciar el rugido del rey de los
-                  dinosaurios en vivo.
-                </p>
-              </div>
-            </div>
+            </article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CONTACTO -->
-    <section id="contacto" class="contacto bg-light py-5 text-center">
-      <div class="container">
-        <h2 class="fw-bold mb-3">¿Tienes dudas?</h2>
-        <p class="mb-4">
-          Escríbenos y un asesor te contactará lo antes posible.
-        </p>
-        <a
-          href="https://jovani-ramirez.github.io/Ebac_git/pages/travels.html"
-          class="btn btn-success btn-lg px-5"
-          >Contáctanos</a
-        >
-      </div>
-    </section>
+      <!-- ATRACCIONES -->
+      <section id="atracciones" class="atracciones py-5 bg-dark">
+        <div class="container text-center text-light">
+          <h2 class="fw-bold mb-5">Atracciones Imperdibles</h2>
+          <div class="row g-4">
+            <article class="col-md-4">
+              <div class="card bg-dark text-light border-success h-100 shadow-lg">
+                <img
+                  src="./assets/img/giro.webp"
+                  class="card-img-top"
+                  alt="Vehículo todoterreno en el Safari Cretácico"
+                />
+                <div class="card-body">
+                  <h3 class="card-title fw-bold">
+                    <i class="fa-solid fa-jeep me-2 text-success"></i>Safari Cretácico
+                  </h3>
+                  <p class="card-text">
+                    Explora en vehículos todoterreno mientras observas herbívoros
+                    gigantes en su hábitat natural.
+                  </p>
+                </div>
+              </div>
+            </article>
 
-    <!-- FOOTER -->
+            <article class="col-md-4">
+              <div class="card bg-dark text-light border-success h-100 shadow-lg">
+                <img
+                  src="./assets/img/lab.jpg"
+                  class="card-img-top"
+                  alt="Centro de visitantes con fósiles y hologramas"
+                />
+                <div class="card-body">
+                  <h3 class="card-title fw-bold">
+                    <i class="fa-solid fa-building-columns me-2 text-success"></i>Centro
+                    de Visitantes
+                  </h3>
+                  <p class="card-text">
+                    Admira fósiles auténticos, hologramas educativos y conoce la
+                    historia detrás de la creación del parque.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-md-4">
+              <div class="card bg-dark text-light border-success h-100 shadow-lg">
+                <img
+                  src="./assets/img/trex.avif"
+                  class="card-img-top"
+                  alt="Exhibición del T-Rex rugiendo"
+                />
+                <div class="card-body">
+                  <h3 class="card-title fw-bold">
+                    <i class="fa-solid fa-dragon me-2 text-success"></i>Exhibición del
+                    T-Rex
+                  </h3>
+                  <p class="card-text">
+                    Siente la adrenalina al presenciar el rugido del rey de los
+                    dinosaurios en vivo.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contacto" class="contacto bg-light py-5 text-center">
+        <div class="container">
+          <h2 class="fw-bold mb-3">¿Tienes dudas?</h2>
+          <p class="mb-4">
+            Escríbenos y un asesor te contactará lo antes posible.
+          </p>
+          <a
+            href="https://jovani-ramirez.github.io/Ebac_git/pages/travels.html"
+            class="btn btn-success btn-lg px-5"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Contáctanos</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER-->
     <footer class="footer bg-dark text-light py-4 text-center">
       <div class="container">
         <p class="mb-2">
           &copy; 2025 Jurassic World. Todos los derechos reservados.
         </p>
         <div class="d-flex justify-content-center gap-3">
-          <a href="#" class="text-light"
+          <a href="#" class="text-light" rel="nofollow noopener"
             ><i class="fab fa-facebook fa-lg"></i
           ></a>
-          <a href="#" class="text-light"
+          <a href="#" class="text-light" rel="nofollow noopener"
             ><i class="fab fa-twitter fa-lg"></i
           ></a>
-          <a href="#" class="text-light"
+          <a href="#" class="text-light" rel="nofollow noopener"
             ><i class="fab fa-instagram fa-lg"></i
           ></a>
         </div>
